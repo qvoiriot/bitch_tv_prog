@@ -1,0 +1,11 @@
+{
+  "name": "Bitch_tv_prog",
+  "main": "index.html",
+  "single-instance": true,
+  "window": {
+    "title": "Bitch Tv Program",
+    "toolbar": true,
+    "width": 1280,
+    "height": 720
+  }
+}

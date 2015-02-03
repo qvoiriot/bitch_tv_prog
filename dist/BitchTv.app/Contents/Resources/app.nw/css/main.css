@@ -1,0 +1,33 @@
+body {
+    padding-top: 50px;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url(../fonts/Raleway-Regular.otf) format("truetype");
+}
+
+h1, h2, h3, h4, a{
+  font-family: "Raleway";
+}
+
+.navbar-inverse {
+  background-image: linear-gradient(to bottom,#3c3c3c 0,#63167c 100%);
+}
+
+hr {
+  border-top: 1px solid #222;
+}
+
+.programs {
+  padding-bottom : 20px;
+  height: 138px;
+}
+
+.programs h3 {
+  margin-top: 10px;
+}
+
+.programs img {
+  width: 90px;
+}

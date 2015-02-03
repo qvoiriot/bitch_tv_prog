@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title></title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width">
+
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+      <link rel="stylesheet" href="css/main.css">
+
+      <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  </head>
+  <body>
+
+    <div class="jumbotron">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <img id="logo" src="" class="img-responsive">
+          </div>
+          <div class="col-lg-9 col-md-8 col-sm-12">
+            <h1 id="chaine"></h1>
+            <p id="today"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="">All channels</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Programming <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#/now" id="now">Now</a></li>
+                      <li><a href="#/morning" id="morning">This morning</a></li>
+                      <li><a href="#/afternoon" id="afternoon">This afternoon</a></li>
+                      <li><a href="#/tonight" id="tonight">Tonight</a></li>
+                    </ul>
+                </li>
+            </ul>
+          </div>
+    </nav>
+
+    <div class="container">
+        <div class="row" id="channel"></div>
+        <div class="row" id="programs"></div>
+        <div id="detail"></div>
+
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h2 class="modal-title" id="myModalLabel"></h2>
+                <p class="lead" id="myModalCategory"></p>
+              </div>
+              <div class="modal-body" id="myModalDescription">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </div>
+
+    <script>window.jQuery || document.write('<script src="js/jquery-1.10.1.min.js"><\/script>')</script>
+    <script src="js/jquery-dateFormat.min.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/api.js"></script>
+
+  </body>
+</html>
